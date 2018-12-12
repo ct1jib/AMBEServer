@@ -17,8 +17,11 @@ All contributions and feedback are much appreciated, as I am *not* an experience
 To build AMBESever, run-
 
 ```
-make
-make install
+sudo make
+sudo make install
+sudo make init-install
+sudo chown +x /etc/init.d/AMBEserver
+sudo systemctl enable AMBEserver
 ```
 
 ### Usage
