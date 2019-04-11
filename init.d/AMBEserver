@@ -17,7 +17,7 @@ set -e
 
 case "$1" in
   start)
-	/usr/bin/AMBEserver -d -o -p 2460 -s 460800
+	/usr/bin/AMBEserver -d -r -i /dev/ttyAMA0
 	echo "Starting AMBEserver" >&2
 	exit 0
 	;;
